@@ -12,7 +12,10 @@ task :console do
 
   require "irb"
   require "irb/completion"
+  require "dotenv"
   require "truevault.rb"
+
+  Dotenv.load
 
   ARGV.clear
   IRB.start
